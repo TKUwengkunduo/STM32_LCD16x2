@@ -42,7 +42,7 @@ STM32_LCD16x2/
 - Copy `src/lcd_16x2.c` to `Core/Src/`
 - Copy `src/lcd_16x2.h` to `Core/Inc/`
 
-<img src="image/copy_file.png" width="600" alt="Copy files" />
+<img src="image/copy_file.png" width="300" alt="Copy files" />
 - Include the header in your `main.c`:
 
 <img src="image/includes.png" width="600" alt="Include header" />
@@ -55,7 +55,7 @@ STM32_LCD16x2/
 
 Paste the following code in the user code sections to initialize the LCD and display text:
 
-<img src="image/main.png" width="600" alt="Main function usage" />
+<img src="image/main.png" width="300" alt="Main function usage" />
 
 ---
 
