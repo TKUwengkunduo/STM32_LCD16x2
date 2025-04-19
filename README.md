@@ -2,7 +2,9 @@
 
 A lightweight, easy-to-use 16x2 LCD library for STM32 (HAL-based), using I2C via PCF8574 I/O expander.\
 This project includes ready-to-use examples you can paste directly into your `main.c`.
+
 ![LCD demo preview](image/demo.gif)
+
 ---
 
 ## Directory Structure
