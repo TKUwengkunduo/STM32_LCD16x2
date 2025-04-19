@@ -41,6 +41,8 @@ STM32_LCD16x2/
 
 - Copy `src/lcd_16x2.c` to `Core/Src/`
 - Copy `src/lcd_16x2.h` to `Core/Inc/`
+
+![Copy files](image/copy_file.png)
 - Include the header in your `main.c`:
 
 ![Include header](image/includes.png)
