@@ -27,7 +27,7 @@ STM32_LCD16x2/
 - Enable I2C (e.g., I2C1) from the **Connectivity > I2C1** menu
 - Keep default settings (standard mode 100kHz, 7-bit addressing)
 
-![Enable I2C in CubeMX](image/ioc.png)
+<img src="image/ioc.png" width="600" alt="Enable I2C in CubeMX" />
 
 ### 2. Assign GPIO Pins for I2C
 
@@ -35,17 +35,17 @@ STM32_LCD16x2/
 - Assign `PB9` to `I2C1_SDA`
 - Set GPIO speed to Very High, and leave pull-up/down as `No pull-up and no pull-down`
 
-![GPIO Pin Settings](image/gpio.png)
+<img src="image/gpio.png" width="600" alt="GPIO Pin Settings" />
 
 ### 3. Add Library to Your STM32 Project
 
 - Copy `src/lcd_16x2.c` to `Core/Src/`
 - Copy `src/lcd_16x2.h` to `Core/Inc/`
 
-![Copy files](image/copy_file.png)
+<img src="image/copy_file.png" width="600" alt="Copy files" />
 - Include the header in your `main.c`:
 
-![Include header](image/includes.png)
+<img src="image/includes.png" width="600" alt="Include header" />
 
   ```c
   #include "lcd_16x2.h"
@@ -55,7 +55,7 @@ STM32_LCD16x2/
 
 Paste the following code in the user code sections to initialize the LCD and display text:
 
-![Main function usage](image/main.png)
+<img src="image/main.png" width="600" alt="Main function usage" />
 
 ---
 
@@ -103,4 +103,14 @@ Below is a list of public functions provided by the LCD library (`lcd_16x2.h`):
 | `LCD16_BlinkCursor(void)` | Enables cursor blinking. |
 | `LCD16_StopBlink(void)` | Disables cursor blinking. |
 | `LCD16_PrintStr(const char *str)` | Prints a string starting from the current cursor position. |
+
+---
+
+## License
+
+MIT License — Free to use and modify.
+
+---
+
+Happy coding with your STM32 + LCD!
 
