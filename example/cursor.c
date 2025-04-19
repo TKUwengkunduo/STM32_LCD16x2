@@ -5,7 +5,7 @@
 
 /* USER CODE BEGIN 2 */
 LCD16_Init(&hi2c1);
-const char *msg = "  STM32 LCD Demo  ";
+const char *text = "  STM32 LCD Demo  ";
 char padded[64] = {0};
 char display[17] = {0};
 /* USER CODE END 2 */
