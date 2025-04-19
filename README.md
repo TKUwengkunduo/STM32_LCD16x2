@@ -22,7 +22,22 @@ STM32_LCD16x2/
 
 ## How to Use
 
-### 1. Add Library to Your STM32 Project
+### 1. Enable I2C in CubeMX
+
+- Enable I2C (e.g., I2C1) from the **Connectivity > I2C1** menu
+- Keep default settings (standard mode 100kHz, 7-bit addressing)
+
+![Enable I2C in CubeMX](image/ioc.png)
+
+### 2. Assign GPIO Pins for I2C
+
+- Assign `PB6` to `I2C1_SCL`
+- Assign `PB9` to `I2C1_SDA`
+- Set GPIO speed to Very High, and leave pull-up/down as `No pull-up and no pull-down`
+
+![GPIO Pin Settings](image/gpio.png)
+
+### 3. Add Library to Your STM32 Project
 
 - Copy `src/lcd_16x2.c` to `Core/Src/`
 - Copy `src/lcd_16x2.h` to `Core/Inc/`
@@ -33,21 +48,6 @@ STM32_LCD16x2/
   ```c
   #include "lcd_16x2.h"
   ```
-
-### 2. Enable I2C in CubeMX
-
-- Enable I2C (e.g., I2C1) from the **Connectivity > I2C1** menu
-- Keep default settings (standard mode 100kHz, 7-bit addressing)
-
-![Enable I2C in CubeMX](image/ioc.png)
-
-### 3. Assign GPIO Pins for I2C
-
-- Assign `PB6` to `I2C1_SCL`
-- Assign `PB9` to `I2C1_SDA`
-- Set GPIO speed to Very High, and leave pull-up/down as `No pull-up and no pull-down`
-
-![GPIO Pin Settings](image/gpio.png)
 
 ### 4. Add LCD code to `main.c`
 
